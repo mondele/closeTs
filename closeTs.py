@@ -55,6 +55,7 @@ dirList = os.listdir()
 #print(os.getcwd())
 #print(dirList)
 
+print("Opening %s to fix the manifest", targetFolder+"manifest.json")
 with open(targetFolder+"manifest.json", 'r', encoding='utf-8') as theManifest:
     theJSON=json.load(theManifest)
 
